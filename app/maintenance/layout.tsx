@@ -39,7 +39,6 @@ export default function RootLayout({
         className={`${lato.variable} ${poppins.variable} ${bricolageGrotesque.variable} flex flex-col min-h-screen antialiased`}
       >
         <main className="flex-grow container mx-auto">{children}</main>
-        <Footer />
       </body>
     </html>
   );
