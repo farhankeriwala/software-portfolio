@@ -44,69 +44,73 @@ const Header: React.FC = () => {
                 </Link>
             ))}
           </div>
-          <div className={"block md:hidden"}>
-            <Sheet open={open} onOpenChange={setOpen}>
-              <SheetTrigger>
-                <Image
-                    src={"/assets/icons/menu.svg"}
-                    alt="menu"
-                    width={28}
-                    height={28}
-                />
-              </SheetTrigger>
-              <SheetContent className={"md:hidden"}>
-                <SheetHeader className={"md:hidden"}>
-                  <SheetTitle className={"md:hidden"}>
-                    <Link href="/" className={"-m-1.5 p-1.5"}>
-                      <span className={"sr-only"}>FGK</span>
-                      <h1 className={"font-bricolageGrotesque font-medium text-center text-neutral-900 text-5xl"}>
-                        FGK
-                      </h1>
-                    </Link>
-                  </SheetTitle>
-                  <Separator/>
-                  <div className={"mt-2 flex flex-col space-y-2"}>
-                    {navItems.map((item: NavItem) => (
-                        <Link
-                            onClick={() => setOpen(false)}
-                            key={item.href}
-                            href={item.href}
-                            className={`flex items-center space-x-2 text-neutral-900 text-lg hover:bg-neutral-200 px-4 py-2 rounded-lg ${
-                                path === item.href ? "bg-neutral-100" : ""
-                            }`}
-                        >
-                          <Image
-                              src={item.icon}
-                              alt={item.label}
-                              width={20}
-                              height={20}
-                          />
-                          <span>{item.label}</span>
-                        </Link>
-                    ))}
-                  </div>
-                </SheetHeader>
-                <Separator className={"my-6"}/>
-                <SheetFooter className={"flex flex-col space-y-2"}>
-                  {socialMediaItems.map((item: SocialMediaItem) => (
-                      <Link
-                          key={item.label}
-                          href={item.url}
-                          className={"flex items-center space-x-2 text-neutral-900 text-lg hover:bg-neutral-100 px-4 py-2 rounded-lg"}
-                      >
+          {
+            path!= '/maintenance' && (
+                  <div className={"block md:hidden"}>
+                    <Sheet open={open} onOpenChange={setOpen}>
+                      <SheetTrigger>
                         <Image
-                            src={item.icon}
-                            alt={item.label}
-                            width={20}
-                            height={20}
+                            src={"/assets/icons/menu.svg"}
+                            alt="menu"
+                            width={28}
+                            height={28}
                         />
-                        <span>{item.label}</span>
-                      </Link>
-                  ))}
-                </SheetFooter>
-              </SheetContent>
-            </Sheet>
-          </div>
+                      </SheetTrigger>
+                      <SheetContent className={"md:hidden"}>
+                        <SheetHeader className={"md:hidden"}>
+                          <SheetTitle className={"md:hidden"}>
+                            <Link href="/" className={"-m-1.5 p-1.5"}>
+                              <span className={"sr-only"}>FGK</span>
+                              <h1 className={"font-bricolageGrotesque font-medium text-center text-neutral-900 text-5xl"}>
+                                FGK
+                              </h1>
+                            </Link>
+                          </SheetTitle>
+                          <Separator/>
+                          <div className={"mt-2 flex flex-col space-y-2"}>
+                            {navItems.map((item: NavItem) => (
+                                <Link
+                                    onClick={() => setOpen(false)}
+                                    key={item.href}
+                                    href={item.href}
+                                    className={`flex items-center space-x-2 text-neutral-900 text-lg hover:bg-neutral-200 px-4 py-2 rounded-lg ${
+                                        path === item.href ? "bg-neutral-100" : ""
+                                    }`}
+                                >
+                                  <Image
+                                      src={item.icon}
+                                      alt={item.label}
+                                      width={20}
+                                      height={20}
+                                  />
+                                  <span>{item.label}</span>
+                                </Link>
+                            ))}
+                          </div>
+                        </SheetHeader>
+                        <Separator className={"my-6"}/>
+                        <SheetFooter className={"flex flex-col space-y-2"}>
+                          {socialMediaItems.map((item: SocialMediaItem) => (
+                              <Link
+                                  key={item.label}
+                                  href={item.url}
+                                  className={"flex items-center space-x-2 text-neutral-900 text-lg hover:bg-neutral-100 px-4 py-2 rounded-lg"}
+                              >
+                                <Image
+                                    src={item.icon}
+                                    alt={item.label}
+                                    width={20}
+                                    height={20}
+                                />
+                                <span>{item.label}</span>
+                              </Link>
+                          ))}
+                        </SheetFooter>
+                      </SheetContent>
+                    </Sheet>
+                  </div>
+              )
+          }
         </nav>
       </header>
   );
