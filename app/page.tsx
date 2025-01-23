@@ -1,13 +1,7 @@
 import { TypewriterEffectSmooth } from "@/components/ui/TypeWritter";
 import { heroTypeWriterWords } from "@/constants";
-import { urlFor } from "@/lib/sanity/imageUrl"; // Import the URL builder function
-import Link from "next/link";
-import Image from "next/image";
-import {getProjects} from "@/lib/utils";
 
 const Page = async () => {
-
-    const projects= await getProjects()
 
     return (
         <section className="flex flex-col items-center justify-center min-h-[calc(100vh-20rem)]">

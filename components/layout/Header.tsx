@@ -31,7 +31,7 @@ const Header: React.FC = () => {
             </Link>
           </div>
           <div className={"hidden md:flex items-center space-x-4"}>
-            {navItems.map((item: NavItem) => (
+            {path != '/maintenance' && navItems.map((item: NavItem) => (
                 <Link
                     key={item.href}
                     href={item.href}

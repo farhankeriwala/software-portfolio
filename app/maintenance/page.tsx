@@ -2,7 +2,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="text-center">
         <p className="text-lg font-semibold text-indigo-600">
           307 Temporary Redirect
@@ -18,7 +18,7 @@ const Page = () => {
           <span className={"loader my-20"}></span>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

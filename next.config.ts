@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
     async redirects() {
         return [
             {
-                source: "/:path((?!maintenance).*)", // Excludes the /maintenance route
+                source: "/",
                 destination: "/maintenance", // Redirects to the maintenance page
                 permanent: false, // Set to false for temporary redirects (e.g., during maintenance)
             },
