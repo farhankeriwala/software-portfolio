@@ -23,28 +23,13 @@ const nextConfig: NextConfig = {
     },
 
     async redirects() {
-      return [
-        {
-          source: "/",
-          destination: "/maintenance",
-          permanent: false,
-        },
-        {
-            source: "/about",
-            destination: "/maintenance",
-            permanent: false,
-          },
-          {
-            source: "/projects/*",
-            destination: "/maintenance",
-            permanent: false,
-          },
-          {
-            source: "/contact",
-            destination: "/maintenance",
-            permanent: false,
-          },
-      ];
+        return [
+            {
+                source: "/:path*", // Matches all routes
+                destination: "/maintenance", // Redirects to the maintenance page
+                permanent: false, // Set to false for temporary redirects (e.g., during maintenance)
+            },
+        ];
     },
 };
 
