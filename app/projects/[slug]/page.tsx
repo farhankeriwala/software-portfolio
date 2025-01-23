@@ -1,9 +1,9 @@
 "use server";
 
 import React from "react";
-import Heading from "@/components/Heading";
+import Heading from "@/components/Headings/Heading";
 import Carousel from "@/components/Carousel";
-import SubHeading from "@/components/SubHeading";
+import SubHeading from "@/components/Headings/SubHeading";
 import {getProjects} from "@/lib/utils";
 import {LinkPreview} from "@/components/ui/LinkPreview";
 import {Button} from "@/components/ui/button";

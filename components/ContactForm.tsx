@@ -4,6 +4,7 @@ import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Switch } from '@/components/ui/switch';
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import Loader from "@/components/Loader";
+import Link from "next/link";
 
 
 interface FormData {
@@ -158,7 +159,7 @@ const ContactForm: React.FC = () => {
                     </div>
                 </div>
                 <div className={"col-span-full"}>
-                    <p className={"font-poppins text-xs"}>Please allow 5-7 business days for a response.</p>
+                    <p className={"font-poppins text-xs"}>Please allow 5-7 business days for your enquiry to be answered.</p>
                 </div>
                 <div className="flex gap-x-4 sm:col-span-2">
                     <div className="flex h-6 items-center">
@@ -170,9 +171,9 @@ const ContactForm: React.FC = () => {
                     </div>
                     <label htmlFor="privacy-policy" className="text-sm text-neutral-600">
                         By selecting this, you agree to our{' '}
-                        <a href="#" className="font-semibold underline text-neutral-600">
+                        <Link href="/privacy-policy" className="font-semibold underline text-neutral-600">
                             privacy policy
-                        </a>
+                        </Link>
                         .
                     </label>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactForm from "@/components/ContactForm";
-import Heading from "@/components/Heading";
+import Heading from "@/components/Headings/Heading";
 
 const Page = () => {
     return (

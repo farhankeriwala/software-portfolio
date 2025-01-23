@@ -2,7 +2,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/ProjectCard";
 import Image from "next/image";
 import Link from "next/link";
-import Heading from "@/components/Heading";
+import Heading from "@/components/Headings/Heading";
 import { getProjects } from "@/lib/utils";
 import { urlFor } from "@/lib/sanity/imageUrl";
 
