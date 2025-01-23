@@ -10,7 +10,7 @@ import {urlFor} from "@/lib/sanity/imageUrl";
 const Page = async () => {
     const projects = await getProjects();
     return (
-        <section>
+        <section className='container p-4'>
             <Heading text={"Projects"} className={"text-center"}/>
             <div className={"grid grid-cols-1 xl:grid-cols-2"}>
                 {

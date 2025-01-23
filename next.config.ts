@@ -22,15 +22,15 @@ const nextConfig: NextConfig = {
         ignoreDuringBuilds: true, // Ignores ESLint build errors
     },
 
-    // async redirects() {
-    //   return [
-    //     {
-    //       source: "/",
-    //       destination: "/maintenance",
-    //       permanent: false,
-    //     },
-    //   ];
-    // },
+    async redirects() {
+      return [
+        {
+          source: "/",
+          destination: "/maintenance",
+          permanent: false,
+        },
+      ];
+    },
 };
 
 export default nextConfig;
