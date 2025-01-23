@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Poppins, Lato, Bricolage_Grotesque } from "next/font/google";
-import Footer from "@/components/layout/Footer";
 
 const lato = Lato({
   subsets: ["latin"],
