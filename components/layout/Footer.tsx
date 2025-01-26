@@ -15,7 +15,7 @@ const Footer = () => {
                 path != "/maintenance" ? (
                     <div
                         className={"flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-y-4"}>
-                        <p className={"font-poppins text-ld font-medium"}>© 2025 Farhan Keriwala. All rights
+                        <p className={"font-poppins text-center flex flex-col md:block text-ld font-medium"}>© 2025 Farhan Keriwala. All rights
                             reserved. <Link href={"/privacy-policy"} className={"underline hover:text-blue-600"}>Privacy Policy</Link>
                         </p>
                         <div>

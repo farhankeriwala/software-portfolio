@@ -9,7 +9,7 @@ const Page: React.FC = () => {
             <div className="mx-auto container max-w-4xl px-6 py-12">
                 <Heading text={"Privacy Policy"}/>
                 <p className="text-base text-neutral-700 mb-6">
-                    Effective Date: <strong>Saturday 1st February 2025</strong>
+                    Effective Date: <strong>Sunday 26th January 2025</strong>
                 </p>
                 <section className="mb-10">
                     <SubHeading text={"1. Introduction\n"}/>

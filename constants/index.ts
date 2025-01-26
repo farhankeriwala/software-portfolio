@@ -24,22 +24,22 @@ export const navItems: NavItem[] = [
 
 export const socialMediaItems: SocialMediaItem[] = [
     {
-        url: '',
+        url: 'https://www.instagram.com/farhan.keriwala/',
         label: 'Instagram',
         icon: '/assets/icons/instagram.svg'
     },
     {
-        url: '',
+        url: 'https://www.facebook.com/',
         label: 'Facebook',
         icon: '/assets/icons/facebook.svg'
     },
     {
-        url: '',
+        url: 'https://www.linkedin.com/in/farhankeriwala/',
         label: 'LinkedIn',
         icon: '/assets/icons/linkedin.svg'
     },
     {
-        url: '',
+        url: 'https://github.com/farhankeriwala',
         label: 'GitHub',
         icon: '/assets/icons/github.svg'
     },
