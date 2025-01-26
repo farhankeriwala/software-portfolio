@@ -5,11 +5,11 @@ import Heading from "@/components/Headings/Heading";
 import Carousel from "@/components/Carousel";
 import SubHeading from "@/components/Headings/SubHeading";
 import {getProjects} from "@/lib/utils";
-import {LinkPreview} from "@/components/ui/LinkPreview";
-import {Button} from "@/components/ui/button";
+import {LinkPreview} from "@/components/ui/aceternity/LinkPreview";
+import {Button} from "@/components/ui/shadcn/button";
 import {urlFor} from "@/lib/sanity/imageUrl";
 import Image from "next/image";
-import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger,} from "@/components/ui/tooltip"
+import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger,} from "@/components/ui/shadcn/tooltip"
 
 
 interface Feature {

@@ -11,8 +11,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
-import {Separator} from "../ui/separator";
+} from "@/components/ui/shadcn/sheet";
+import {Separator} from "../ui/shadcn/separator";
 import {usePathname} from "next/navigation";
 
 const Header: React.FC = () => {
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
             ))}
           </div>
           {
-            path!= '/maintenance' && (
+            path != '/maintenance' && (
                   <div className={"block md:hidden"}>
                     <Sheet open={open} onOpenChange={setOpen}>
                       <SheetTrigger>
@@ -94,7 +94,7 @@ const Header: React.FC = () => {
                               <Link
                                   key={item.label}
                                   href={item.url}
-                                  className={"flex items-center space-x-2 text-neutral-900 text-lg hover:bg-neutral-100 px-4 py-2 rounded-lg"}
+                                  className={"flex items-center space-x-2 text-neutral-00 text-lg hover:bg-neutral-100 px-4 py-2 rounded-lg"}
                               >
                                 <Image
                                     src={item.icon}

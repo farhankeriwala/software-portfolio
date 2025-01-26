@@ -1,5 +1,5 @@
 import React from "react";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/ProjectCard";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/aceternity/ProjectCard";
 import Image from "next/image";
 import Link from "next/link";
 import Heading from "@/components/Headings/Heading";

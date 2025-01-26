@@ -2,7 +2,7 @@ import React from 'react';
 import ContactForm from "@/components/ContactForm";
 import Heading from "@/components/Headings/Heading";
 
-const Page = () => {
+const Page: React.FC = () => {
     return (
         <section className={"container"}>
             <Heading text={"Contact"} className={"text-center"}/>

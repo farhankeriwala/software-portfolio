@@ -33,3 +33,62 @@ export const getProjects = async () => {
         console.error(error);
     }
 }
+
+export const getExperience = async () => {
+    const query = `*[
+      _type == "experience"
+    ]|order(endDate desc)[0...12]{
+      _id,
+      position,
+      company,
+      companyLogo,
+      startDate,
+      endDate,
+      description,
+    }`;
+    try{
+        const options = {next: {revalidate: 30}};
+        const response = await client.fetch<SanityDocument[]>(query, {}, options);
+        if(response){
+            return response;
+        }
+    }
+    catch (error){
+        console.error(error);
+    }
+}
+
+export const fetchEducation = async () => {
+    const query = `*[
+      _type == "education"
+    ]|order(startDate asc)[0...12]{
+      _id,
+      institution,
+      degree,
+      logo,
+      grades,
+      fieldsOfStudy,
+      startDate,
+      endDate,
+      description,
+    }`;
+    try{
+        const options = {next: {revalidate: 30}};
+        const response = await client.fetch<SanityDocument[]>(query, {}, options);
+        if(response){
+            return response;
+        }
+    }
+    catch (error){
+        console.error(error);
+    }
+}
+
+export const formatSanityDate = (inputDate: string) => {
+    const date = new Date(inputDate);
+    if (isNaN(date.getTime())) {
+        throw new Error("Invalid date format. Expected format: YYYY-MM-DD");
+    }
+    const options: Intl.DateTimeFormatOptions = { month: 'short', year: 'numeric' };
+    return new Intl.DateTimeFormat('en-US', options).format(date);
+}

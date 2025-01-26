@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { Switch } from '@/components/ui/switch';
-import { Alert, AlertDescription } from "@/components/ui/alert"
+import { Switch } from '@/components/ui/shadcn/switch';
+import { Alert, AlertDescription } from "@/components/ui/shadcn/alert"
 import Loader from "@/components/Loader";
 import Link from "next/link";
 
@@ -78,7 +78,7 @@ const ContactForm: React.FC = () => {
     };
 
     return (
-        <form className="max-w-2xl mx-auto" onSubmit={handleFormSubmit}>
+        <form className="max-w-3xl mx-auto" onSubmit={handleFormSubmit}>
             {
                 isSubmitting && <Loader/>
             }
@@ -169,8 +169,8 @@ const ContactForm: React.FC = () => {
                             id="privacy-policy"
                         />
                     </div>
-                    <label htmlFor="privacy-policy" className="text-sm text-neutral-600">
-                        By selecting this, you agree to our{' '}
+                    <label htmlFor="privacy-policy" className="text-sm font-poppins text-neutral-600">
+                        By selecting this, you agree to the&nbsp;
                         <Link href="/privacy-policy" className="font-semibold underline text-neutral-600">
                             privacy policy
                         </Link>

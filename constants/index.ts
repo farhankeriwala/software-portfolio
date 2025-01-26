@@ -83,3 +83,12 @@ const Home = () => {
 };
 
 export default Home;`
+
+export const experienceItems = [
+    {
+        position: 'Lab Demonstrator',
+        company: 'Queen Mary University of London',
+        time: 'Sep 2024 - Present',
+        description: 'Guiding and supporting students through various lab assignments and coursework projects. Additionally, I collaborate closely with module organisers, lecturers, and leads to meticulously plan and execute each session, aiming to guarantee a meaningful and enriching learning experience for all students.'
+    }
+]

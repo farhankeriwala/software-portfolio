@@ -1,5 +1,5 @@
 import React from 'react';
-import {Separator} from "@/components/ui/separator";
+import {Separator} from "@/components/ui/shadcn/separator";
 import Image from "next/image";
 
 const Home = () => {

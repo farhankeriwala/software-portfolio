@@ -10,11 +10,11 @@ const Footer = () => {
     const path = usePathname();
     return (
 
-        <footer className={"container mb-12 mt-20"}>
+        <footer className={"container my-10"}>
             {
                 path != "/maintenance" ? (
                     <div
-                        className={"flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-y-4 py-8"}>
+                        className={"flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-y-4"}>
                         <p className={"font-poppins text-ld font-medium"}>© 2025 Farhan Keriwala. All rights
                             reserved. <Link href={"/privacy-policy"} className={"underline hover:text-blue-600"}>Privacy Policy</Link>
                         </p>

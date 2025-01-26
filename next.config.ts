@@ -21,13 +21,33 @@ const nextConfig: NextConfig = {
     eslint: {
         ignoreDuringBuilds: true, // Ignores ESLint build errors
     },
-    //
+    
     // async redirects() {
     //     return [
     //         {
     //             source: "/",
-    //             destination: "/maintenance", // Redirects to the maintenance page
-    //             permanent: false, // Set to false for temporary redirects (e.g., during maintenance)
+    //             destination: "/maintenance", 
+    //             permanent: false, 
+    //         },
+    //         {
+    //             source: "/about",
+    //             destination: "/maintenance", 
+    //             permanent: false, 
+    //         },
+    //         {
+    //             source: "/projects",
+    //             destination: "/maintenance", 
+    //             permanent: false, 
+    //         },
+    //         {
+    //             source: "/contact",
+    //             destination: "/maintenance", 
+    //             permanent: false, 
+    //         },
+    //         {
+    //             source: "/privacy-policy",
+    //             destination: "/maintenance", 
+    //             permanent: false, 
     //         },
     //     ];
     // },
