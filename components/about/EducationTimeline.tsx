@@ -13,7 +13,7 @@ const EducationTimeline = async () => {
       <ol className="items-center justify-evenly w-full sm:flex">
         {
           education ? education.map((education) => (
-              <li key={education._id} className="w-full relative mb-6 sm:mb-0">
+              <li key={education._id} className="w-full flex flex-col mb-6 sm:mb-0">
                 <div className="flex items-center">
                   <div
                       className="z-10 flex items-center justify-center w-6 h-6 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
