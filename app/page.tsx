@@ -11,7 +11,7 @@ const Page: React.FC = () => {
             <CodeBlock
                 highlightLines={[9, 11, 13, 15, 17]}
                 language={"tsx"}
-                filename={"Home.tsx"}
+                filename={"FGK.tsx"}
                 code={heroCodeBlockCode}
             />
             <Stats/>
