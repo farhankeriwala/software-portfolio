@@ -11,7 +11,7 @@ const Introduction = () => {
                 <p className={"font-poppins text-base sm:text-lg md:text-xl lg:text-2xl"}>
                     Hi there I&apos;m Farhan, an aspiring Software Engineer and Quantum Analyst having currently completed my final semester of my BSc
                     in Computer Science at Queen Mary University of London. <br/><br/>With a strong grasp on Web and
-                    Object-Oriented Programming, I&apos;m passionate about developing innovative solutions and building
+                    Object-Oriented Programming, and the mathemtics behind Machine Learning concepts, I&apos;m passionate about developing innovative solutions and building
                     robust applications.
                 </p>
             </div>
