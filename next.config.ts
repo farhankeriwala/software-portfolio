@@ -22,35 +22,35 @@ const nextConfig: NextConfig = {
         ignoreDuringBuilds: true, // Ignores ESLint build errors
     },
     
-    // async redirects() {
-    //     return [
-    //         {
-    //             source: "/",
-    //             destination: "/maintenance", 
-    //             permanent: false, 
-    //         },
-    //         {
-    //             source: "/about",
-    //             destination: "/maintenance", 
-    //             permanent: false, 
-    //         },
-    //         {
-    //             source: "/projects",
-    //             destination: "/maintenance", 
-    //             permanent: false, 
-    //         },
-    //         {
-    //             source: "/contact",
-    //             destination: "/maintenance", 
-    //             permanent: false, 
-    //         },
-    //         {
-    //             source: "/privacy-policy",
-    //             destination: "/maintenance", 
-    //             permanent: false, 
-    //         },
-    //     ];
-    // },
+    async redirects() {
+        return [
+            {
+                source: "/",
+                destination: "/maintenance",
+                permanent: false,
+            },
+            {
+                source: "/about",
+                destination: "/maintenance",
+                permanent: false,
+            },
+            {
+                source: "/projects",
+                destination: "/maintenance",
+                permanent: false,
+            },
+            {
+                source: "/contact",
+                destination: "/maintenance",
+                permanent: false,
+            },
+            {
+                source: "/privacy-policy",
+                destination: "/maintenance",
+                permanent: false,
+            },
+        ];
+    },
 };
 
 export default nextConfig;
