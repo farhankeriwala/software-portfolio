@@ -15,7 +15,7 @@ const Footer = () => {
                 path != "/maintenance" ? (
                     <div
                         className={"flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-y-4"}>
-                        <p className={"font-poppins text-center flex flex-col md:block text-ld font-medium"}>© 2025 Farhan Keriwala. All rights
+                        <p className={"font-poppins text-center flex flex-col md:block text-ld font-medium"}>© {new Date().getFullYear()} Farhan Keriwala. All rights
                             reserved. <Link href={"/privacy-policy"} className={"underline hover:text-blue-600"}>Privacy Policy</Link>
                         </p>
                         <div>
@@ -37,7 +37,7 @@ const Footer = () => {
                     </div>
                 ) : (<div
                     className={"flex flex-col-reverse md:flex-row items-center justify-center gap-y-4 py-8"}>
-                    <p className={"font-poppins text-ld text-center font-medium"}>© 2025 Farhan Keriwala. All rights
+                    <p className={"font-poppins text-ld text-center font-medium"}>© {new Date().getDay()} Farhan Keriwala. All rights
                         reserved.</p>
 
                 </div>)
