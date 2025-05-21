@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Lato, Bricolage_Grotesque } from "next/font/google";
+import { Poppins, Lato, Bricolage_Grotesque, Mona_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -10,6 +10,11 @@ const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
   variable: "--font-lato",
   display: "swap",
+});
+
+const monaSans = Mona_Sans({
+  variable: "--font-mona-sans",
+  subsets: ["latin"],
 });
 
 const poppins = Poppins({

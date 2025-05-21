@@ -89,22 +89,22 @@ const Header: React.FC = () => {
                           </div>
                         </SheetHeader>
                         <Separator className={"my-6"}/>
-                        <SheetFooter className={"flex flex-col space-y-2"}>
-                          {socialMediaItems.map((item: SocialMediaItem) => (
-                              <Link
-                                  key={item.label}
-                                  href={item.url}
-                                  className={"flex items-center space-x-2 text-neutral-00 text-lg hover:bg-neutral-100 px-4 py-2 rounded-lg"}
-                              >
-                                <Image
-                                    src={item.icon}
-                                    alt={item.label}
-                                    width={20}
-                                    height={20}
-                                />
-                                <span>{item.label}</span>
-                              </Link>
-                          ))}
+                        {socialMediaItems.map((item: SocialMediaItem) => (
+                            <Link
+                                key={item.label}
+                                href={item.url}
+                                className={"flex items-center space-x-2 text-neutral-900 text-lg hover:bg-neutral-100 px-4 py-2 rounded-lg"}
+                            >
+                              <Image
+                                  src={item.icon}
+                                  alt={item.label}
+                                  width={20}
+                                  height={20}
+                              />
+                              <span>{item.label}</span>
+                            </Link>
+                        ))}
+                        <SheetFooter>
                         </SheetFooter>
                       </SheetContent>
                     </Sheet>

@@ -15,6 +15,11 @@ export const navItems: NavItem[] = [
         label: "Projects",
         icon: '/assets/icons/gallery.svg'
     },
+    // {
+    //     href: "/services",
+    //     label: "Services",
+    //     icon: '/assets/icons/settings.svg'
+    // },
     {
         href: "/contact",
         label: "Contact",
@@ -27,11 +32,6 @@ export const socialMediaItems: SocialMediaItem[] = [
         url: 'https://www.instagram.com/farhan.keriwala/',
         label: 'Instagram',
         icon: '/assets/icons/instagram.svg'
-    },
-    {
-        url: 'https://www.facebook.com/',
-        label: 'Facebook',
-        icon: '/assets/icons/facebook.svg'
     },
     {
         url: 'https://www.linkedin.com/in/farhankeriwala/',
