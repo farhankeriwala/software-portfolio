@@ -38,7 +38,7 @@ const Page = async () => {
                   width={500}
                   height={500}
                   className={
-                    "border max-h-[400px] w-auto mx-auto my-8 rounded-lg"
+                    "border-2 max-h-[400px] w-auto mx-auto my-8 rounded-lg"
                   }
                 />
               </CardItem>

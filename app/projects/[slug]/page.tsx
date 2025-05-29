@@ -49,10 +49,10 @@ const Page = async ({params}: { params: Promise<{ slug: string }> }) => {
                             project.techStack.map((tech: any, index: number) => (
                                 <div className={"mx-auto hover:scale-110 transition-all duration-200"} key={index}>
                                     <TooltipProvider>
-                                        <Tooltip>
+                                        <Tooltip delayDuration={200}>
                                             <TooltipTrigger>
                                                 <Image src={urlFor(tech.image.asset).url()} alt={""} width={80}
-                                                       height={80}/>
+                                                       height={80} className={"rounded-lg"}/>
                                             </TooltipTrigger>
                                             <TooltipContent>
                                                 {tech.name}

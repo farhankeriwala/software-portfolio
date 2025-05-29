@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/react"
+import {karla} from "@/fonts";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -44,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato.variable} ${poppins.variable} ${bricolageGrotesque.variable} flex flex-col min-h-screen antialiased`}
+        className={`${lato.variable} ${karla.className} ${bricolageGrotesque.variable} flex flex-col min-h-screen antialiased`}
       >
       <Analytics/>
         <Header />
